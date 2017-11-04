@@ -17,9 +17,7 @@ m.route(document.body, '/list', {
     render(vnode) {
       return (
         <Layout>
-          <UserForm>
-            {vnode.attrs}
-          </UserForm>
+          <UserForm id={vnode.attrs.id} />
         </Layout>
       )
     }
